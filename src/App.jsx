@@ -35,7 +35,6 @@ function App() {
                 RestCountries
             </h2>
             <div className="container">
-
                 {/*
                 no exercicio original foi utilizado um botão para chamar a função
                 ListarPaises, mas como a função é chamada no useEffect
@@ -46,14 +45,11 @@ function App() {
                 </button> 
                 */}
 
-                
                 {paises.length > 0 && (
-                
-                // faco um teste no array paises para saber se ele tem algum conteudo
-                // e caso tenha, crio um select com os paises
-                // o select chama a função handleChange quando o usuario seleciona um pais
-                // o value do select é o codigo do pais (cca3) e o texto é o nome do pais
-
+                    // faco um teste no array paises para saber se ele tem algum conteudo
+                    // e caso tenha, crio um select com os paises
+                    // o select chama a função handleChange quando o usuario seleciona um pais
+                    // o value do select é o codigo do pais (cca3) e o texto é o nome do pais
 
                     <select className="select" onChange={handleChange}>
                         {paises.map((pais) => {
